@@ -1,0 +1,31 @@
+﻿@model List<Category>
+
+@{
+    ViewData["Title"] = "Menu";
+}
+
+<h2 class="text-3xl font-bold mb-6 text-center">Our Menu 🍽️</h2>
+
+@foreach (var category in Model)
+{
+    <div class="mb-5 p-4 border rounded-lg shadow-sm bg-light">
+        <h3 class="text-xl fw-bold border-bottom pb-2 mb-3">@category.Name</h3>
+        <div class="row">
+            @foreach (var item in category.MenuItems)
+            {
+                <div class="col-md-6 mb-3">
+                    <div class="p-3 border rounded d-flex justify-content-between align-items-center bg-white shadow-sm">
+                        <div>
+                            <h5 class="mb-1">@item.Name</h5>
+                            <small class="text-muted">@item.PreparationTimeMinutes min</small>
+                        </div>
+                        <div class="text-end">
+                            <span class="fw-bold text-success">$@item.Price.ToString("F2")</span><br />
+                            <availability is-available="@item.IsAvailable"></availability>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}

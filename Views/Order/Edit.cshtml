@@ -1,0 +1,86 @@
+﻿@model Order
+@{
+    var items = ViewBag.MenuItems as List<MenuItem>;
+    var isEdit = Model != null && Model.Id != 0;
+    ViewData["Title"] = isEdit ? $"Edit Order #{Model.Id}" : "Create New Order";
+}
+
+<h2 class="text-2xl font-bold mb-6">@ViewData["Title"]</h2>
+
+<form asp-action="@(isEdit ? "Edit" : "Create")" method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 space-y-6">
+    <input type="hidden" asp-for="Id" />
+
+    <div>
+        <label class="block text-gray-700 font-semibold  mb-3 ms-3">Customer Name</label>
+        <input asp-for="CustomerName" class="border border-gray-300 rounded w-full p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-3 ms-5" />
+        <span asp-validation-for="CustomerName" class="text-red-600 text-sm"></span>
+    </div>
+
+    <div>
+        <label class="block text-gray-700 font-semibold mb-3 ms-3 me-4">Order Type</label>
+        <select asp-for="Type" class="border border-gray-300 rounded w-full p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-3 ms-5" id="orderType">
+            <option value="0">Dine In</option>
+            <option value="1">Takeout</option>
+            <option value="2">Delivery</option>
+        </select>
+    </div>
+
+    <div id="deliveryAddressSection">
+        <label class="block text-gray-700 font-semibold mb-3 ms-3">Delivery Address</label>
+        <input asp-for="DeliveryAddress" class="border border-gray-300 rounded w-full p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-3 ms-5" />
+        <span asp-validation-for="DeliveryAddress" class="text-red-600 text-sm"></span>
+    </div>
+
+    <div>
+        <h3 class="text-md-start font-semibold mb-3 ms-3">Select Items</h3>
+        <div class="space-y-2">
+            @for (int i = 0; i < items.Count; i++)
+            {
+                var existingItem = Model.Items?.FirstOrDefault(x => x.MenuItemId == items[i].Id);
+                <div class="flex justify-between items-center border border-gray-200 rounded p-2 ms-3">
+                    <span>@items[i].Name - $@items[i].Price.ToString("F2")</span>
+                    <input type="hidden" name="menuItemIds" value="@items[i].Id" />
+                    <input type="number" name="quantities" min="0" value="@(existingItem != null ? existingItem.Quantity : 0)"
+                           class="border rounded w-20 text-center p-1 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="flex items-center space-x-4">
+        <button type="submit" class="btn btn-sm btn-primary mt-3 ms-3">
+            
+            @(isEdit ? "Update Order" : "Place Order")
+        </button>
+        <a asp-action="Index" class="btn btn-sm btn-outline-secondary mt-3 ms-3">Cancel</a>
+    </div>
+   
+
+
+
+
+
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function toggleDeliveryAddress() {
+            const typeSelect = document.getElementById('orderType');
+            const deliverySection = document.getElementById('deliveryAddressSection');
+            if (typeSelect.value === '2') {
+                deliverySection.style.display = 'block';
+            } else {
+                deliverySection.style.display = 'none';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const typeSelect = document.getElementById('orderType');
+            if (typeSelect) {
+                typeSelect.addEventListener('change', toggleDeliveryAddress);
+                toggleDeliveryAddress();
+            }
+        });
+    </script>
+}

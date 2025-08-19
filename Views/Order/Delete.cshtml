@@ -1,0 +1,9 @@
+﻿@model Order
+<h2 class="text-xl font-bold mb-4">Delete Order #@Model.Id</h2>
+<p>Are you sure you want to delete the order by <strong>@Model.CustomerName</strong>?</p>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class=" px-4 py-2 rounded">Confirm Delete</button>
+    <a asp-action="Index" class="ml-4 text-blue-600 underline">Cancel</a>
+</form>

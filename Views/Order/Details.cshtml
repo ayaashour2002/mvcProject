@@ -1,0 +1,208 @@
+﻿@* @model Order
+
+<h2 class="text-xl font-bold mb-4">Order #@Model.Id</h2>
+<p><strong>Customer:</strong> @Model.CustomerName</p>
+<p><strong>Status:</strong> @Model.Status</p>
+<p><strong>Type:</strong> @Model.Type</p>
+@if (Model.Type == OrderType.Delivery)
+{
+    <p><strong>Delivery Address:</strong> @Model.DeliveryAddress</p>
+}
+<p><strong>Order Time:</strong> @Model.OrderTime</p>
+
+<h3 class="mt-4 font-semibold">Items</h3>
+<ul class="list-disc ml-6">
+    @foreach (var item in Model.Items)
+    {
+        <li>@item.MenuItem.Name x @item.Quantity = $@item.Subtotal</li>
+    }
+</ul>
+
+<p class="mt-4">Tax: $@Model.Tax</p>
+<p>Discount: -$@Model.Discount</p>
+<h4 class="text-lg font-bold">Total: $@Model.Total</h4>
+ *@
+
+
+
+
+
+
+@* 
+ @model Order
+
+@{
+    ViewData["Title"] = "Order Details";
+}
+
+<h2 class="text-2xl font-bold mb-4">Order Details - #@Model.Id</h2>
+
+@if (ViewBag.Message != null)
+{
+    <div class="bg-yellow-100 text-yellow-800 p-2 rounded mb-4">
+        @ViewBag.Message
+    </div>
+}
+
+<div class="space-y-2">
+    <p><strong>Customer Name:</strong> @Model.CustomerName</p>
+    <p><strong>Order Type:</strong> @Model.Type</p>
+    @if (Model.Type == OrderType.Delivery)
+    {
+        <p><strong>Delivery Address:</strong> @Model.DeliveryAddress</p>
+    }
+    <p><strong>Order Time:</strong> @Model.OrderTime</p>
+    <p><strong>Status:</strong> @Model.Status</p>
+    <p><strong>Total Amount:</strong> $@Model.Total.ToString("F2")</p>
+</div>
+
+<h3 class="text-xl font-semibold mt-6">Order Items</h3>
+<table class="table-auto w-full border mt-2">
+    <thead>
+        <tr class="bg-gray-100">
+            <th class="px-4 py-2 text-left">Item</th>
+            <th class="px-4 py-2 text-left">Quantity</th>
+            <th class="px-4 py-2 text-left">Price</th>
+            <th class="px-4 py-2 text-left">Subtotal</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td class="border px-4 py-2">@item.MenuItem.Name</td>
+                <td class="border px-4 py-2">@item.Quantity</td>
+                <td class="border px-4 py-2">$@item.MenuItem.Price.ToString("F2")</td>
+                <td class="border px-4 py-2">$@item.Subtotal.ToString("F2")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (Model.Status == OrderStatus.Pending || Model.Status == OrderStatus.Preparing)
+{
+    <form asp-action="UpdateStatus" asp-route-id="@Model.Id" method="post" class="mt-6">
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">
+            Update Status
+        </button>
+    </form>
+}
+
+<a asp-action="Index" class="text-blue-600 underline block mt-4">Back to Orders</a>
+ *@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            @model Order
+
+@{
+    ViewData["Title"] = "Order Details";
+    int maxPrepTime = Model.Items.Any() ? Model.Items.Max(i => i.MenuItem.PreparationTimeMinutes) : 0;
+    var estimatedDeliveryTime = Model.OrderTime.AddMinutes(maxPrepTime + 30);
+}
+@* @if (TempData["Error"] != null)
+{
+    <div class="bg-red-100 text-red-800 p-2 rounded mb-4">
+        @TempData["Error"]
+    </div>
+}
+@if (TempData["Message"] != null)
+{
+    <div class="bg-green-100 text-green-800 p-2 rounded mb-4">
+        @TempData["Message"]
+    </div>
+} *@
+
+
+
+<h2 class="text-2xl font-bold mb-4">Order Details - #@Model.Id</h2>
+
+@if (ViewBag.Message != null)
+{
+    <div class="bg-yellow-100 text-yellow-800 p-2 rounded mb-4">
+        @ViewBag.Message
+    </div>
+}
+
+<div class="space-y-2">
+    <p><strong>Customer Name:</strong> @Model.CustomerName</p>
+    <p><strong>Order Type:</strong> @Model.Type</p>
+    @if (Model.Type == OrderType.Delivery)
+    {
+        <p><strong>Estimated Delivery Time:</strong> @ViewBag.EstimatedDeliveryTime?.ToString("hh:mm tt")</p>
+    }
+
+    <p><strong>Order Time:</strong> @Model.OrderTime</p>
+    <p><strong>Status:</strong> @Model.Status</p>
+    <p><strong>Total (8.5% tax & discounts):</strong> $@Model.Total.ToString("F2")</p>
+</div>
+
+<h3 class="text-xl font-semibold mt-6">Order Items</h3>
+<table class="table-auto w-full border mt-2">
+    <thead>
+        <tr class="bg-gray-100">
+            <th class="px-4 py-2 text-left">Item</th>
+            <th class="px-4 py-2 text-left">Quantity</th>
+            <th class="px-4 py-2 text-left">Price</th>
+            <th class="px-4 py-2 text-left">Subtotal</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td class="border px-4 py-2">@item.MenuItem.Name</td>
+                <td class="border px-4 py-2">@item.Quantity</td>
+                <td class="border px-4 py-2">$@item.MenuItem.Price.ToString("F2")</td>
+                <td class="border px-4 py-2">$@item.Subtotal.ToString("F2")</td>
+            </tr>
+           
+        }
+    </tbody>
+</table>
+
+@if (Model.Status == OrderStatus.Pending || Model.Status == OrderStatus.Preparing )
+{
+    <form asp-action="UpdateStatus" asp-route-id="@Model.Id" method="post" class="mt-6">
+        <button type="submit" class="px-4 py-2 rounded mt-3 alert-success">
+            Update Status
+        </button>
+    </form>
+    <form asp-action="CancelOrder" asp-route-id="@Model.Id" method="post" class="mt-4">
+        <button type="submit" class="px-4 py-2 rounded alert-danger  mb-4">Cancel Order</button>
+    </form>
+
+}
+@if (Model.Status == OrderStatus.Cancelled )
+{
+    <form asp-action="DeletePermanent" asp-route-id="@Model.Id" method="post" class="mt-4">
+        <button type="submit" class="px-4 py-2 rounded alert-danger mb-3">
+            Delete Permanently
+        </button>
+    </form>
+}
+
+<a asp-action="Index" class="px-4 py-2 rounded mt-5 alert-link text-decoration-none"><-Back to Orders</a>

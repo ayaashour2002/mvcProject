@@ -1,0 +1,66 @@
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\bin\Debug\net8.0\appsettings.json
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\bin\Debug\net8.0\RestaurantMS_test.staticwebassets.runtime.json
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\bin\Debug\net8.0\RestaurantMS_test.staticwebassets.endpoints.json
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\bin\Debug\net8.0\RestaurantMS_test.exe
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\bin\Debug\net8.0\RestaurantMS_test.deps.json
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\bin\Debug\net8.0\RestaurantMS_test.runtimeconfig.json
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\bin\Debug\net8.0\RestaurantMS_test.dll
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\bin\Debug\net8.0\RestaurantMS_test.pdb
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.AssemblyInfoInputs.cache
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.AssemblyInfo.cs
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.csproj.CoreCompileInputs.cache
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.RazorAssemblyInfo.cache
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.RazorAssemblyInfo.cs
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\scopedcss\bundle\RestaurantMS_test.styles.css
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\scopedcss\projectbundle\RestaurantMS_test.bundle.scp.css
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.dll
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\refint\RestaurantMS_test.dll
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.pdb
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.genruntimeconfig.cache
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\ref\RestaurantMS_test.dll
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\XPRISTO\Desktop\MVC\RestaurantMS_test\RestaurantMS_test\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\bin\Debug\net8.0\appsettings.json
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\bin\Debug\net8.0\RestaurantMS_test.staticwebassets.endpoints.json
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\bin\Debug\net8.0\RestaurantMS_test.staticwebassets.runtime.json
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\bin\Debug\net8.0\RestaurantMS_test.exe
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\bin\Debug\net8.0\RestaurantMS_test.deps.json
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\bin\Debug\net8.0\RestaurantMS_test.runtimeconfig.json
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\bin\Debug\net8.0\RestaurantMS_test.dll
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\bin\Debug\net8.0\RestaurantMS_test.pdb
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.AssemblyInfoInputs.cache
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.AssemblyInfo.cs
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.csproj.CoreCompileInputs.cache
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.RazorAssemblyInfo.cache
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.RazorAssemblyInfo.cs
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\scopedcss\bundle\RestaurantMS_test.styles.css
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\scopedcss\projectbundle\RestaurantMS_test.bundle.scp.css
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.dll
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\refint\RestaurantMS_test.dll
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.pdb
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\RestaurantMS_test.genruntimeconfig.cache
+C:\Users\XPRISTO\Desktop\New folder (2)\RestaurantMS_test - Copy\RestaurantMS_test\obj\Debug\net8.0\ref\RestaurantMS_test.dll
