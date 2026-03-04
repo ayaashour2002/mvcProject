@@ -99,3 +99,14 @@ dotnet restore
 dotnet run
 
 ---
+## 📸 Screenshots
+
+### Home
+![Home](./screenshots/home.png)
+
+### Menu
+![Menu](./screenshots/menu.png)
+
+### Orders
+![Orders](./screenshots/order.png)
+
